@@ -3,9 +3,10 @@
 import time
 import pyperclip
 import keyboard
+import sys
+sys.path.append('Interface/')
 from prog import *
 import random
-import sys
 from PyQt5.QtWidgets import QApplication, QFileDialog, QMessageBox, QProgressBar, QPushButton
 from PyQt5.QtCore import Qt
 from encode_img import *
@@ -729,20 +730,23 @@ class MyWin(QtWidgets.QMainWindow):
                 self.ui.lineEdit_sys_mes.setText("Your sync code is Invalid." + '\n' + "Go to settings to fix it, if you want")
                 self.add_logs("Your sync code is Invalid." + '\n' + "Go to settings to fix it, if you want")
                 itr = 100000
-
-        with open('Logs.txt', 'r') as f:
-            try:
-                a = f.readlines()
-                if a[1][4] == ':':
-                    a = a[1][3]
-                elif a[1][5] == ':':
-                    a = a[1][3:5]
-                if str(now.month) == str(int(a)+1):
-                    # self.clear_logs()
-                    QMessageBox.warning(self, "Рекомендация ",
-                                            "Прошел месяц, для безопасности смените пин-код синхронизации", QMessageBox.Ok)
-            except Exception:
-                a=1
+        if os.path.exists('Logs.txt') == True:
+            with open('Logs.txt', 'r') as f:
+                try:
+                    a = f.readlines()
+                    if a[1][4] == ':':
+                        a = a[1][3]
+                    elif a[1][5] == ':':
+                        a = a[1][3:5]
+                    if str(now.month) == str(int(a)+1):
+                        # self.clear_logs()
+                        QMessageBox.warning(self, "Рекомендация ",
+                                                "Прошел месяц, для безопасности смените пин-код синхронизации", QMessageBox.Ok)
+                except Exception:
+                    a=1
+        else:
+            with open('Logs.txt', 'w') as f:
+                f.write('')
 
     def write_key(self, password):
         password = password.encode()
