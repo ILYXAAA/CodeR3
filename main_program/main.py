@@ -715,10 +715,10 @@ class MyWin(QtWidgets.QMainWindow):
             r.write("")
         if os.path.exists(papath + "Download_Pic"):
             shutil.rmtree(papath + "Download_Pic")
-            os.mkdir(papath + "Download_Pic")
+        os.mkdir(papath + "Download_Pic")
         if os.path.exists(papath + "Upload_Pic"):
             shutil.rmtree(papath + "Upload_Pic")
-            os.mkdir(papath + "Upload_Pic")
+        os.mkdir(papath + "Upload_Pic")
         global now_day
         now_day = 0
         global now_month
