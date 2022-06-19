@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="background">
+    <file>icons/background.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>icons/clapperboard.png</file>
+    <file>icons/video.png</file>
+    <file>icons/settingss.png</file>
+    <file>icons/clear.png</file>
+    <file>icons/email.png</file>
+    <file>icons/exit.png</file>
+    <file>icons/folder.png</file>
+    <file>icons/folder2.ico</file>
+    <file>icons/icon.ico</file>
+    <file>icons/pictures.png</file>
+    <file>icons/settings.png</file>
+    <file>icons/sms.png</file>
+    <file>icons/write.ico</file>
+  </qresource>
+</RCC>

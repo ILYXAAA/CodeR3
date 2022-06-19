@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWnidow</class>
+ <widget class="QMainWindow" name="MainWnidow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1110</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1110</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1110</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Cryptor 3.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconscryptor.qrc">
+    <normaloff>:/icons/icons/icon.ico</normaloff>:/icons/icons/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/background/icons/background.png);</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>481</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>1000</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Автоматический вход в указанную вами почту:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>0</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>1000</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;System Messages:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="lineEdit_sys_mes">
+    <property name="geometry">
+     <rect>
+      <x>881</x>
+      <y>33</y>
+      <width>221</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>1000</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_enter_mail">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Войти</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>120</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_date">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>150</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Ok</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1110</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="menu_Gallery">
+     <property name="title">
+      <string>Галерея</string>
+     </property>
+     <property name="icon">
+      <iconset resource="iconscryptor.qrc">
+       <normaloff>:/icons/icons/settings.png</normaloff>:/icons/icons/settings.png</iconset>
+     </property>
+     <addaction name="action_open"/>
+     <addaction name="action_clean"/>
+    </widget>
+    <widget class="QMenu" name="menuALL_SAFE">
+     <property name="title">
+      <string>ALL_SAFE</string>
+     </property>
+     <property name="icon">
+      <iconset resource="iconscryptor.qrc">
+       <normaloff>:/icons/icons/settings.png</normaloff>:/icons/icons/settings.png</iconset>
+     </property>
+     <addaction name="action_ALL_SAFE"/>
+     <addaction name="action_delete_txt"/>
+    </widget>
+    <addaction name="menu_Gallery"/>
+    <addaction name="menuALL_SAFE"/>
+    <addaction name="action_settings"/>
+    <addaction name="action_clear_logs"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_encode">
+    <property name="title">
+     <string>Кодер</string>
+    </property>
+    <addaction name="action_en_sms"/>
+    <addaction name="action_en_img"/>
+    <addaction name="action_en_video"/>
+   </widget>
+   <widget class="QMenu" name="menu_decode">
+    <property name="title">
+     <string>Декодер</string>
+    </property>
+    <addaction name="action_de_sms"/>
+    <addaction name="action_de_img"/>
+    <addaction name="action_de_video"/>
+   </widget>
+   <widget class="QMenu" name="menu_sending">
+    <property name="title">
+     <string>Отправка</string>
+    </property>
+    <addaction name="action_send"/>
+   </widget>
+   <addaction name="menu_menu"/>
+   <addaction name="menu_encode"/>
+   <addaction name="menu_decode"/>
+   <addaction name="menu_sending"/>
+  </widget>
+  <action name="action_exit">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/exit.png</normaloff>:/icons/icons/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход </string>
+   </property>
+  </action>
+  <action name="action_en_sms">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/sms.png</normaloff>:/icons/icons/sms.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сообщения</string>
+   </property>
+  </action>
+  <action name="action_en_img">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/pictures.png</normaloff>:/icons/icons/pictures.png</iconset>
+   </property>
+   <property name="text">
+    <string>Картинки</string>
+   </property>
+  </action>
+  <action name="action_de_sms">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/sms.png</normaloff>:/icons/icons/sms.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сообщения</string>
+   </property>
+  </action>
+  <action name="action_de_img">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/pictures.png</normaloff>:/icons/icons/pictures.png</iconset>
+   </property>
+   <property name="text">
+    <string>Картинки</string>
+   </property>
+  </action>
+  <action name="action_send">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/email.png</normaloff>:/icons/icons/email.png</iconset>
+   </property>
+   <property name="text">
+    <string>Отправить файл (ы)</string>
+   </property>
+  </action>
+  <action name="action_send_img">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/email.png</normaloff>:/icons/icons/email.png</iconset>
+   </property>
+   <property name="text">
+    <string>Картинки</string>
+   </property>
+  </action>
+  <action name="action_send_both">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/email.png</normaloff>:/icons/icons/email.png</iconset>
+   </property>
+   <property name="text">
+    <string>Оба файла</string>
+   </property>
+  </action>
+  <action name="action_sobr">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/folder.png</normaloff>:/icons/icons/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Собранное фото</string>
+   </property>
+  </action>
+  <action name="action_upload">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/folder.png</normaloff>:/icons/icons/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Upload Folder</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Папка с текстовыми</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/folder.png</normaloff>:/icons/icons/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть галерею</string>
+   </property>
+  </action>
+  <action name="action_clean">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/clear.png</normaloff>:/icons/icons/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Очистить галерею</string>
+   </property>
+  </action>
+  <action name="action_delete_txt">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/clear.png</normaloff>:/icons/icons/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить текстовые файлы</string>
+   </property>
+  </action>
+  <action name="action_ALL_SAFE">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/folder.png</normaloff>:/icons/icons/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть папку</string>
+   </property>
+  </action>
+  <action name="action_settings">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/settings.png</normaloff>:/icons/icons/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+  </action>
+  <action name="action_en_video">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/clapperboard.png</normaloff>icons/clapperboard.png</iconset>
+   </property>
+   <property name="text">
+    <string>Видео</string>
+   </property>
+  </action>
+  <action name="action_de_video">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/clapperboard.png</normaloff>icons/clapperboard.png</iconset>
+   </property>
+   <property name="text">
+    <string>Видео</string>
+   </property>
+  </action>
+  <action name="action_clear_logs">
+   <property name="icon">
+    <iconset resource="iconscryptor.qrc">
+     <normaloff>:/icons/icons/clear.png</normaloff>:/icons/icons/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Очистить логи</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="iconscryptor.qrc"/>
+ </resources>
+ <connections/>
+</ui>
