@@ -4,7 +4,7 @@
 
 _"The program with a graphical interface (PyQt5) is designed to encrypt and decrypt text, images and videos. Uses AES-128 encryption with the key you choose. Supports sending encrypted files by mail."_
 
-![image](https://user-images.githubusercontent.com/107761814/174475316-221c93b4-63a9-4fb7-9d6e-90b41860c4dc.png)
+![image](https://user-images.githubusercontent.com/107761814/174490279-70a7d886-70e5-4157-b768-c6240664f01d.png)
 
 ## Перед использованием, проверьте, существуют ли у вас библиотеки:
 
