@@ -1,4 +1,5 @@
 # CodeR3
+
 ## **Программа с графическим интерфейсом (PyQt5), предназначена для шифрования и дешифрования текста, изображений и видео. Использует AES-128 шифрование с выбиранным вами ключом. Поддерживает отправку зашифрованных файлов по почте.**
 
 _"The program with a graphical interface (PyQt5) is designed to encrypt and decrypt text, images and videos. Uses AES-128 encryption with the key you choose. Supports sending encrypted files by mail."_
@@ -96,9 +97,6 @@ _"Before using, check if you have libraries:"_
 
 
 ### _Полный мануал можно прочитать в файле Мануал "CodeR3.docx"_
-
-
-
 
 
 
